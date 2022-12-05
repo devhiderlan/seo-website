@@ -66,6 +66,16 @@ section {
   color: white;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  color: var(--black);
+}
+.heading span {
+  color: var(--red);
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -139,6 +149,32 @@ section {
   font-size: 1.5rem;
   color: var(--light-color);
   padding: 1rem 0;
+  line-height: 2;
+}
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.services .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 0.5rem;
+}
+.services .box-container .box img {
+  height: 10rem;
+  margin-bottom: 0.5rem;
+}
+.services .box-container .box h3 {
+  padding: 0.7rem 0;
+  font-size: 2rem;
+  color: var(--black);
+}
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--light-color);
   line-height: 2;
 }
 
