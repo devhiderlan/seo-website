@@ -178,6 +178,17 @@ section {
   line-height: 2;
 }
 
+.work .box-container {
+  columns: 3 25rem;
+  gap: 2rem;
+}
+.work .box-container img {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
