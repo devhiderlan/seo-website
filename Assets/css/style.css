@@ -189,6 +189,58 @@ section {
   border-radius: 0.5rem;
 }
 
+.pricing .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.pricing .box-container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.pricing .box-container .box:nth-child(2) {
+  background: var(--light-bg);
+  border-radius: 1rem;
+}
+.pricing .box-container .box:nth-child(2) .btn {
+  background-color: var(--red);
+  color: white;
+}
+.pricing .box-container .box:nth-child(2) .btn:hover {
+  opacity: 0.8;
+}
+.pricing .box-container .box h3 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  background: var(--red);
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.pricing .box-container .box .price {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+.pricing .box-container .box .price span {
+  font-size: 3rem;
+}
+.pricing .box-container .box ul {
+  padding: 1rem 0;
+  list-style: none;
+}
+.pricing .box-container .box ul li {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+.pricing .box-container .box ul li i {
+  padding-right: 0.5rem;
+  color: var(--red);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
