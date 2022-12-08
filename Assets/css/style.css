@@ -241,6 +241,51 @@ section {
   color: var(--red);
 }
 
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.reviews .box-container .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.reviews .box-container .box .user img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+.reviews .box-container .box .user h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+.reviews .box-container .box .user .stars i {
+  font-size: 1.5rem;
+  color: var(--red);
+}
+.reviews .box-container .box .text {
+  padding: 2rem;
+  border-radius: 0% 0.5rem;
+  background: var(--light-bg);
+  font-size: 1.5rem;
+  color: var(--light-color);
+  position: relative;
+  margin-top: 3rem;
+  line-height: 2;
+}
+.reviews .box-container .box .text::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 2.5rem;
+  height: 2rem;
+  width: 2rem;
+  background: var(--light-bg);
+  transform: rotate(45deg);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
