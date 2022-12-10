@@ -1,3 +1,5 @@
+# SEO Website
+
 ## Visão Geral
 
 ### Projeto de um componente interativo para avaliação de qualidade de serviço/atendimento prestado.
@@ -8,7 +10,7 @@
 #
 ## Construido com:
 - HTML
-- CSS
+- CSS / SASS
 - JavaScript
 
 ## Funcionalidades
