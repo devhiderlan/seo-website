@@ -21,4 +21,8 @@ themeBtn.onclick = () => {
 window.onscroll = () => {
    menu.classList.remove('fa-times')
    navbar.classList.remove('active')
+
+   let maxHeight = window.document.body.scrollHeight - window.innerHeight
+   let percentage = (window.scrollY / maxHeight) * 100
+   document.querySelector('.header .scroll-indicator').style.width = percentage + '%'
 }

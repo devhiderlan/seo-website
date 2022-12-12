@@ -120,6 +120,13 @@ section {
 .header #theme-btn.fa-sun {
   transform: rotate(90deg);
 }
+.header .scroll-indicator {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  height: 1rem;
+  background: var(--red);
+}
 
 .home .box {
   min-height: 70vh;
@@ -392,6 +399,54 @@ section {
   background: var(--red);
 }
 
+.quick-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--black);
+  justify-content: space-between;
+}
+.quick-links .logo {
+  margin-right: 0.5rem;
+  color: var(--white);
+  font-size: 2.5rem;
+}
+.quick-links .logo i {
+  color: var(--red);
+  margin-left: 0.5rem;
+}
+.quick-links .links a {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  color: var(--white);
+}
+.quick-links .links a:hover {
+  color: var(--red);
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--light-bg);
+  justify-content: space-between;
+}
+.credit p {
+  font-size: 1.7rem;
+  color: var(--black);
+}
+.credit p span {
+  color: var(--red);
+}
+.credit .share a {
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+.credit .share a:hover {
+  color: var(--red);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -440,6 +495,21 @@ section {
   }
   .newsletter .content p {
     font-size: 1.8rem;
+  }
+  .quick-links {
+    flex-flow: column;
+    text-align: center;
+  }
+  .quick-links .links a {
+    margin: 2rem 0;
+    display: block;
+  }
+  .credit {
+    flex-flow: column;
+    text-align: center;
+  }
+  .credit .share a {
+    margin: 0 1rem;
   }
 }
 @media (max-width: 450px) {

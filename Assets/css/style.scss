@@ -138,6 +138,13 @@ section {
    #theme-btn.fa-sun {
       transform: rotate(90deg);
    }
+
+   .scroll-indicator {
+      position: absolute;
+      top: 99%; left: 0;
+      height: 1rem;
+      background: var(--red);
+   }
 }
 
 //Home section
@@ -487,7 +494,66 @@ section {
 
 //Footer section 
 
+.quick-links {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   background: var(--black);
+   justify-content: space-between;
 
+   .logo {
+      margin-right: .5rem;
+      color: var(--white);
+      font-size: 2.5rem;
+
+      i {
+         color: var(--red);
+         margin-left: .5rem;
+      }
+   }
+
+   .links {
+      a {
+         margin-left: 1rem;
+         font-size: 1.7rem;
+         color: var(--white);
+
+         &:hover {
+            color: var(--red);
+         }
+      }
+   }
+}
+
+.credit {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   background: var(--light-bg);
+   justify-content: space-between;
+
+   
+   p {
+      font-size: 1.7rem;
+      color: var(--black);
+
+      span {
+         color: var(--red);
+      }
+   }
+
+   .share {
+      a {
+         margin-left: 2rem;
+         font-size: 2.5rem;
+         color: var(--black);
+
+         &:hover {
+            color: var(--red);
+         }
+      }
+   }
+}
 
 
 
@@ -576,7 +642,33 @@ section {
          }
       }
    }
+
+   .quick-links{
+      flex-flow: column;
+      text-align: center;
+
+      .links {
+
+         a {
+            margin: 2rem 0;
+            display: block;
+         }
+      }
+   }
+
+   .credit{
+      flex-flow: column;
+      text-align: center;
+
+      .share {
+
+         a {
+            margin:0 1rem;
+         }
+      }
+   }
 }
+
 
 @media (max-width: 450px) {
    html {
