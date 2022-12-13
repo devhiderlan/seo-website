@@ -435,7 +435,7 @@ section {
   font-size: 1.7rem;
   color: var(--black);
 }
-.credit p span {
+.credit p span a {
   color: var(--red);
 }
 .credit .share a {
