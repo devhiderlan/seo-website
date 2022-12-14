@@ -2,10 +2,10 @@
 
 ## Visão Geral
 
-### Projeto de um componente interativo para avaliação de qualidade de serviço/atendimento prestado.
+### Projeto que simula um Website que oferece ferramentas e soluções para melhorar o SEO de empresas na internet.
 #
 
-![](./Assets/design/desktop-preview.jpg)
+![](./Assets/images/seo-website.png)
 
 #
 ## Construido com:
@@ -13,29 +13,47 @@
 - CSS / SASS
 - JavaScript
 
+#
 ## Funcionalidades
-- Card interativo para avaliação de qualidade de serviços/atendimento prestados
+- Web site que oferece ferramentas e soluções para melhorar o SEO de empresas na internet. 
+- Design responsivo, que se adapta a vários tamanhos de tela. 
+- Botão para alterar tema da página claro/escuro.
 
 ## O que eu aprendi:
+- Boas práticas com JavaScript
+
 - Manipulação do DOM com:
 ```js
   document.querySelector('.main-container')
   document.querySelectorAll('.btn')
   document.getElementById('submit')
 ```
-- laços de repetição
+- Eventos na página
 ```js
-  rates.forEach(rate => {})
-```
-- Eventos
-```js
-  submitButton.addEventListener('click', () => {})
-```
-- Boas práticas com JavaScript
+  themeBtn.onclick = () => {
+   themeBtn.classList.toggle('fa-sun')
 
+   if (themeBtn.classList.contains('fa-sun')) {
+      document.body.classList.add('active')
+   } else {
+      document.body.classList.remove('active')
+   }
+}
+
+window.onscroll = () => {
+   menu.classList.remove('fa-times')
+   navbar.classList.remove('active')
+
+   let maxHeight = window.document.body.scrollHeight - window.innerHeight
+   let percentage = (window.scrollY / maxHeight) * 100
+   document.querySelector('.header .scroll-indicator').style.width = percentage + '%'
+}
+```
+
+#
 ## Link
 
-Veja o projeto aqui: 
+Veja o projeto aqui: [Acessar 🌏](https://devhiderlan.github.io/seo-website/)
 
 ## Autor
 
